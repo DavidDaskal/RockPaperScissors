@@ -1,0 +1,58 @@
+#intro {
+	color:red;
+	text-align: center;
+	font-size: 30px;
+	background-color: beige;
+	height: 40px;
+	margin-bottom: 20px;
+}
+body {
+	background-color: azure;
+}
+
+#name {
+	padding: 10px;
+}
+
+img {
+	width:150px;
+	height:100px;
+}
+
+#playerone {
+	margin-left: 40px;
+	border:black solid 1px;
+	width:260px;
+	float:left;
+}
+
+#player1 {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+
+#rockps {
+	display:none;
+}
+
+#rockps2 {
+	display: none;
+}
+
+#name2 {
+	padding: 10px;
+}
+
+
+#playertwo {
+	margin-right: 40px;
+	border:black solid 1px;
+	width:260px;
+	float:right;
+}
+
+#player2 {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}

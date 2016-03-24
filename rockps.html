@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/rockps.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+</head>
+
+<body>
+<div id="intro">
+<h1>Rock Paper Scissors</h1>
+</div>
+
+	<div id = "playerone">
+	<p id = "name" >Hello Player 1. Please enter your name below</p>
+	<br>
+		<form>
+		<div id="player1">
+		    <input type="text" id="playerOneName">
+		    <br>
+		    <br>
+		    <button id="submit" type="submit" value="Submit">Submit</button>
+		    <br>
+ 		</div>
+ 		</form>
+ 		<div id = "rockps">
+ 			<img class="rps" id="rock" data-name = "rock" src = "assets/images/rock.jpg"/>
+ 			<br>
+ 			<img class="rps" id="paper" data-name = "paper" src = "assets/images/paper.jpg"/>
+ 			<br>
+ 			<img class="rps" id="scissors" data-name = "scissors" src = "assets/images/scissors.jpg"/>
+ 		</div>
+ 	</div>
+
+
+
+
+ 	<div id = "playertwo">
+	<p id = "name2" >Hello Player 2. Please enter your name below</p>
+	<br>
+		<form>
+		<div id="player2">
+		    <input type="text" id="playerTwoName">
+		    <br>
+		    <br>
+		    <button id="submit2" type="submit" value="Submit">Submit</button>
+		    <br>
+ 		</div>
+ 		</form>
+ 		<div id = "rockps2">
+ 			<img class="rps2" id="rock2" data-name = "rock" src = "assets/images/rock.jpg"/>
+ 			<br>
+ 			<img class="rps2" id="paper2" data-name = "paper" src = "assets/images/paper.jpg"/>
+ 			<br>
+ 			<img class="rps2" id="scissors2" data-name = "scissors" src = "assets/images/scissors.jpg"/>
+ 		</div>
+ 	
+
+	</div>
+
+
+ 
+	
+</div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="assets/javascript/rockps.js"></script>
+</html>
