@@ -1,71 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/rockps.css">
-	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <meta charset="UTF-8">
+  <title>Two - Player Rocks Paper Scissors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 </head>
-
 <body>
-<div id="intro">
-<h1>Rock Paper Scissors</h1>
-</div>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <div id="sizer">
+    <div id="swapzone"><input id="username" placeholder="Name"/>
+      <button id="start">Start</button>
+    </div>
+    <div id="currentturn">
+    </div>
+    <div id="gamediv">
+      <div id="player1">
+        <h3 id="player1name">Player1</h3>
+        <ul>
+        </ul>
+        <div id="player1chosen"></div>
+        <div class="outcomes">
+          <div class="outcometrackers" id="player1wins"></div>
+          <div class="outcometrackers" id="player1losses"></div>
+        </div>
+      </div>
+      <div id="result">
 
-	<div id = "playerone">
-	<p id = "name" >Hello Player 1. Please enter your name below</p>
-	<br>
-		<form>
-		<div id="player1">
-		    <input type="text" id="playerOneName">
-		    <br>
-		    <br>
-		    <button id="submit" type="submit" value="Submit">Submit</button>
-		    <br>
- 		</div>
- 		</form>
- 		<div id = "rockps">
- 			<img class="rps" id="rock" data-name = "rock" src = "assets/images/rock.jpg"/>
- 			<br>
- 			<img class="rps" id="paper" data-name = "paper" src = "assets/images/paper.jpg"/>
- 			<br>
- 			<img class="rps" id="scissors" data-name = "scissors" src = "assets/images/scissors.jpg"/>
- 		</div>
- 	</div>
-
-
-
-
- 	<div id = "playertwo">
-	<p id = "name2" >Hello Player 2. Please enter your name below</p>
-	<br>
-		<form>
-		<div id="player2">
-		    <input type="text" id="playerTwoName">
-		    <br>
-		    <br>
-		    <button id="submit2" type="submit" value="Submit">Submit</button>
-		    <br>
- 		</div>
- 		</form>
- 		<div id = "rockps2">
- 			<img class="rps2" id="rock2" data-name = "rock" src = "assets/images/rock.jpg"/>
- 			<br>
- 			<img class="rps2" id="paper2" data-name = "paper" src = "assets/images/paper.jpg"/>
- 			<br>
- 			<img class="rps2" id="scissors2" data-name = "scissors" src = "assets/images/scissors.jpg"/>
- 		</div>
- 	
-
-	</div>
-
-
- 
-	
-</div>
-
+      </div>
+      <div id="player2">
+        <h3 id="player2name">Player2</h3>
+        <ul>
+        </ul>
+        <div id="player2chosen"></div>
+        <div class="outcomes">
+          <div class="outcometrackers" id="player2wins"></div>
+          <div class="outcometrackers" id="player2losses"></div>
+        </div>
+      </div>
+    </div>
+    <div id="chat">
+      <div id="chatmessages"></div>
+      <div id="chatbar">
+        <input id="chatinput" />
+        <button id="chatsend">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="app.js"></script>
 </body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="assets/javascript/rockps.js"></script>
 </html>
